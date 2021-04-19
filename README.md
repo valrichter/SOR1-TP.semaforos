@@ -138,7 +138,7 @@
 	}
 	fclose(receta);
 
-##### ACLARACIONES
+#### ACLARACIONES
 1)Los comentarios del codigo original fueron borrados debido a que estaban escritos de la forma:
 	
 	//comentario
