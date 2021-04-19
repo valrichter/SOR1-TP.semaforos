@@ -1,0 +1,9 @@
+cortar|ajo|perejil
+mezclar|ajo|perejil|huevo
+salar|sal
+agregarCarne|carne
+empanar|carne
+fritar|milanesa
+hornear|pan
+cortarExtras|lechuga|tomate|cebolla|pepino
+armado|milanesa|pan|vegetales
