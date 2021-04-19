@@ -1,9 +1,9 @@
 # SOR-Semáforos-1S-2021
 
-###PSEUDOCODIGO
+#### PSEUDOCODIGO
 
 
-Semaforos:
+*Semaforos:*
 
 	s_mezclar
 	s_salar
@@ -17,7 +17,7 @@ Semaforos:
 	s_requisito2
 	s_requisito3
 
-Acciones:
+*Acciones:*
 
 	cortar()
 	mezclar()
@@ -28,6 +28,44 @@ Acciones:
 	hornear()
 	cortarVegetales()
 	armar()
-    
+	
+*Codigo:*
 
-HOLA
+	 cortar()
+	v(s_mezclar)
+	
+	p(s_mezclar)
+	 mezclar()
+	v(s_salar)
+	
+	p(s_salar)
+	p(s_salero)
+	 salar()
+	v(s_salero)
+	v(s_agregarCarne)
+	
+	p(s_agregarCarne)
+	 agregarCarne()
+	v(s_empanar)
+	
+	p(s_empanar)
+	 empanar()
+	v(s_fritar)
+	
+	p(s_fritar)
+	p(s_sarten)
+	 fritar()
+	v(s_sarten)
+	v(s_requisito1)
+	
+	p(s_horno)
+	 hornear()
+	v(horno)
+	v(s_requisito2)
+	
+	 cortarExtras()
+	v(s_requisito3) 
+	
+	
+	
+	
