@@ -109,31 +109,44 @@ El codigo harcodeado:
 
 Fue reemplazado por:
 
-		FILE * receta = fopen("receta.txt", "r"); /*abrimos la receta para leerla*/
-		
-		int a=0;
-		int b=0;
-		bool esAccion=true;
-		
-	    	char texto[50];
-		
-		while(feof(receta) == 0){ /*recorremos todo el archivo*/
-			fscanf(receta, "%s", texto); /*con fscanf agarramos una linea hasta \n y la insertamos en la variable texto*/
-			
-			for (char *palabra = strtok(texto, "|"); palabra; palabra = strtok(NULL, "|")){ /*spliteamos texto por "|" para separar las palabras*/
-				
-				if(esAccion==true){ /*sabemos que la primera palabra es siempre una accion*/
-					strcpy(pthread_data->pasos_param[a].accion, palabra); /*insertamos la palabra*/
-					esAccion=false; /*ponemos la variable en false ya que las demas palabras son ingredientes*/
-					
-				}else{
-					strcpy(pthread_data->pasos_param[a].ingredientes[b], palabra);
-					b++;/*incrementamos para poder poner el seiguiente ingrediente*/
-				}
-			}
+	FILE * receta = fopen("receta.txt", "r"); /*abrimos la receta para leerla*/
 
-			a++; /*aumentamos los pasos*/
-			b=0; /*reseteamos los ingredientes*/
-			esAccion=true; /*reseteamos el valor de esAccion ya que vamos a recorrer el sigueinte paso*/
+	int a=0;
+	int b=0;
+	bool esAccion=true;
+
+	char texto[50];
+
+	while(feof(receta) == 0){ /*recorremos todo el archivo*/
+		fscanf(receta, "%s", texto); /*con fscanf agarramos una linea hasta \n y la insertamos en la variable texto*/
+
+		for (char *palabra = strtok(texto, "|"); palabra; palabra = strtok(NULL, "|")){ /*spliteamos texto por "|" para separar las palabras*/
+
+			if(esAccion==true){ /*sabemos que la primera palabra es siempre una accion*/
+				strcpy(pthread_data->pasos_param[a].accion, palabra); /*insertamos la palabra*/
+				esAccion=false; /*ponemos la variable en false ya que las demas palabras son ingredientes*/
+
+			}else{
+				strcpy(pthread_data->pasos_param[a].ingredientes[b], palabra);
+				b++;/*incrementamos para poder poner el seiguiente ingrediente*/
+			}
 		}
-		fclose(receta);
+
+		a++; /*aumentamos los pasos*/
+		b=0; /*reseteamos los ingredientes*/
+		esAccion=true; /*reseteamos el valor de esAccion ya que vamos a recorrer el sigueinte paso*/
+	}
+	fclose(receta);
+
+##### ACLARACIONES
+1)Los comentarios del codigo original fueron borrados debido a que estaban escritos de la forma:
+	
+	//comentario
+	
+y no de la forma:
+	
+	/*comentario*/
+
+lo cual me daba error al compilar y por eso decidi eliminarlos
+
+2)Las demas funciones agregadas estan explicadas dentro del codigo
