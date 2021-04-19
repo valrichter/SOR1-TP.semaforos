@@ -70,7 +70,7 @@
 #### CODIGO
 
 
-El codigo harcodeado:
+*El codigo harcodeado:*
 
 	strcpy(pthread_data->pasos_param[0].accion, "cortar");
 	strcpy(pthread_data->pasos_param[0].ingredientes[0], "ajo");
@@ -107,7 +107,7 @@ El codigo harcodeado:
 	strcpy(pthread_data->pasos_param[8].ingredientes[1], "pan");
 	strcpy(pthread_data->pasos_param[8].ingredientes[2], "vegetales");
 
-Fue reemplazado por:
+*Fue reemplazado por:*
 
 	FILE * receta = fopen("receta.txt", "r"); /*abrimos la receta para leerla*/
 
