@@ -1,6 +1,6 @@
 # SOR-Semáforos-1S-2021
 
-**PSEUDOCODIGO**
+###PSEUDOCODIGO
 
 
 Semaforos:
@@ -29,6 +29,5 @@ Acciones:
 	cortarVegetales()
 	armar()
     
-> cortar()
-    mezclar()
+
 HOLA
