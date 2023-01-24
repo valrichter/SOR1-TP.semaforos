@@ -1,4 +1,5 @@
-# SOR-Semáforos-1S-2021
+# Sistemas Operativos y Redes
+## SOR-TPsemaforos-1S-2021
 
 ### BREVE EXPLICACION DE LA CONSIGNA
 Ejercicio Subway Argento:\
