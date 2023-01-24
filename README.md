@@ -163,4 +163,10 @@ y no de la forma:
 
 lo cual me daba error al compilar y por eso decidi eliminarlos
 
-2)Las demas funciones agregadas estan explicadas dentro del codigo
+2) Las demas funciones agregadas estan explicadas dentro del codigo
+
+#### COMO EJECUTAR EL PROGRAMA
+1) Correr el programa en un entorno linux
+2) sudo apt install gcc
+3) gcc -o subwayArgento subwayArgento.c
+4) subwayArgento
