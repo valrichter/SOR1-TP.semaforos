@@ -153,7 +153,7 @@ Para mas informacion leer el archivo Consigna.pdf
 	fclose(receta);
 
 #### ACLARACIONES
-1)Los comentarios del codigo original fueron borrados debido a que estaban escritos de la forma:
+1) Los comentarios del codigo original fueron borrados debido a que estaban escritos de la forma:
 	
 	//comentario
 	
