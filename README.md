@@ -1,5 +1,19 @@
 # SOR-Semáforos-1S-2021
 
+## BREVE EXPLICACION DE LA CONSIGNA
+Ejercicio Subway Argento
+En la cocina de Subway Argento compiten cuatro equipos de cocineros
+para ganarse el puesto de trabajo en el local. ¿Quién será el primero en
+entregar 1 sándwich de milanesa terminado, de 15 cm, al dueño del
+local?\
+La dificultad de la competencia es que la cocina no cuenta con el
+equipamiento individual para cada equipo, sino que algunos de ellos son
+compartidos. Se tienen que ordenar para cocinar las milanesas ya que
+solo tienen un sartén para todos los equipos y este cocina una milanesa
+a la vez, existe solo un horno que cocina dos panes a la vez y un solo
+salero.\
+Para mas informacion leer el archivo Consigna.pdf
+
 #### PSEUDOCODIGO
 
 
